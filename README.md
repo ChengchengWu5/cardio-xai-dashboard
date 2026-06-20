@@ -135,11 +135,6 @@ cardio-xai-dashboard/
 │   └── app.ipynb
 │   └── app.py
 │   └── cardio-xai_selected.ipynb
-├── images/
-│   ├── model_feature_importance.png
-│   ├── shap_summary_plot.png
-│   ├── shap_beeswarm_plot.png
-│   └── patient_waterfall_plot.png
 ├── selected_model/
 │   └── gradient_boosting_cardio_model.pkl
 └── README.md
