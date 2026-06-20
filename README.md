@@ -119,16 +119,29 @@ The dashboard enables users to:
 ```text
 cardio-xai-dashboard/
 │
-├── app.py
-├── cardio_train.csv
-├── gradient_boosting_cardio_model.pkl
+├── dashboard_sreenshots/
+│   └── patient_friendly_explanation
+│   └── clinician_explanation
+│   └── machine_learning_researcher_view
+│   └── ethinics_and_safety
+├── data/
+│   └── cardio_train.csv
+├── images/
+│   ├── model_feature_importance.png
+│   ├── shap_summary_plot.png
+│   ├── shap_beeswarm_plot.png
+│   └── patient_waterfall_plot.png
 ├── notebooks/
+│   └── app.ipynb
+│   └── app.py
 │   └── cardio-xai_selected.ipynb
 ├── images/
 │   ├── model_feature_importance.png
 │   ├── shap_summary_plot.png
 │   ├── shap_beeswarm_plot.png
 │   └── patient_waterfall_plot.png
+├── selected_model/
+│   └── gradient_boosting_cardio_model.pkl
 └── README.md
 ```
 
@@ -197,6 +210,7 @@ Run the application:
 ```bash
 /usr/local/bin/python3.10 app.py
 ```
+OR run app.ipynb instead
 
 ---
 
@@ -221,6 +235,3 @@ Run the application:
 * Incorporate model fairness and bias assessment.
 * Support real-time risk prediction using user inputs.
 * Conduct usability testing with patients, clinicians, and researchers.
-
-```
-```
