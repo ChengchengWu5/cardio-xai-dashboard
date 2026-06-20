@@ -49,3 +49,22 @@ The final output is an ***interactive dashboard built with Dash and Plotly (app.
 - ML researchers 
 
 ***Python version used:*** 3.10.9
+
+#### Run the dashboard using app.py (or app.ipynb if needed)
+- To run the app, go to Terminal and find the folder containing app.py and the model file
+- Then open the lcoal URL shown in the Termial (for example: http://127.0.0.1:8050)
+
+- In case joblib and dash work in app.ipynb but not in app.py, run the following first:
+    - import sys
+    - print(sys.executable)
+    to print the output, for example: /usr/local/bin/python3.10
+- Then use the exact same path to run app.py in the Terminal
+    - for example in Mac: cd ~/Desktop/cardio-xai-dashboard/notebooks/usr/local/bin/python3.10 app.py
+- Install packages into that exact Python in the Terminal
+    - for example in Mac: /usr/local/bin/python3.10 -m pip install joblib dash plotly pandas scikit-learn
+- Test imports
+    - for example in Mac: /usr/local/bin/python3.10 -c "import joblib, dash, plotly, pandas, sklearn; print('All imports working')
+- Then run the app in the Terminal
+    - for example in Mac: cd ~/Desktop/cardio-xai-dashboard/notebooks/usr/local/bin/python3.10 app.py
+- Finally, open the url
+    - for example: http://127.0.0.1:8050/
