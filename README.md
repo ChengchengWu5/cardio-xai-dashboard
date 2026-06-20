@@ -119,22 +119,22 @@ The dashboard enables users to:
 ```text
 cardio-xai-dashboard/
 │
-├── dashboard_sreenshots/
-│   ├── patient_friendly_explanation
-│   ├── clinician_explanation
-│   ├── machine_learning_researcher_view
-│   └── ethinics_and_safety
+├── dashboard_reports/
+│   ├── XAI Dashboard - Clinician Explanation.pdf
+│   ├── XAI Dashboard - Ethics and Safety.pdf
+│   ├── XAI Dashboard - Machine Learning Researcher View.pdf
+│   └── XAI Dashboard - Patient-Friendly Explanation.pdf
 ├── data/
 │   └── cardio_train.csv
 ├── images/
-│   ├── model_feature_importance.png
-│   ├── shap_summary_plot.png
-│   ├── shap_beeswarm_plot.png
-│   └── patient_waterfall_plot.png
+│   ├── gradient_boosting_model_feature_importance.png
+│   ├── shap_global_importance.png
+│   ├── shap_summary_beeswarm_plot.png
+│   └── shap_waterfall_patient_50.png
 ├── notebooks/
 │   ├── app.ipynb
 │   ├── app.py
-│   └── cardio-xai_selected.ipynb
+│   └── cardio-xai_dashboard.ipynb
 ├── selected_model/
 │   └── gradient_boosting_cardio_model.pkl
 └── README.md
