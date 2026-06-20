@@ -1,70 +1,113 @@
-### Cardiovascular Risk Prediction and Explainable Artificial Intelligence (XAI) Dashboard
+Cardiovascular Risk Prediction and Explainable AI (XAI) Dashboard
 
-This project demonstrates the development of an Explainable Artificial Intelligence (XAI) framework for cardiovascular risk prediction using a publicly available cardiovascular health dataset from Kaggle. The workflow covers the complete machine learning pipeline, including data preparation, feature engineering, model training, performance evaluation, and model interpretation. 
+Project Overview
+This project demonstrates the development of an Explainable Artificial Intelligence (XAI) framework for cardiovascular disease (CVD) risk prediction using the Cardiovascular Disease Dataset from Kaggle.
+The project covers the complete machine learning workflow, including data preparation, feature engineering, model development, performance evaluation, model interpretation, and dashboard deployment. The aim is not only to predict cardiovascular risk but also to provide transparent explanations that help users understand the factors driving each prediction.
 
-***Project Objectives:***
-- Develop machine learning models for cardiovascular disease risk prediction.
-- Compare model performance using multiple evaluation metrics.
-- Apply explainable AI techniques to improve model transparency.
-- Generate both global and patient-specific explanations of predictions.
-- Build an interactive dashboard for communicating risk predictions and model explanations to different audiences.
+Project Objectives
+* Develop machine learning models for cardiovascular disease risk prediction.
+* Compare model performance using multiple evaluation metrics.
+* Apply Explainable AI (XAI) techniques to improve model transparency.
+* Generate both global and patient-level explanations of model predictions.
+* Build an interactive dashboard for communicating predictions and explanations to different audiences.
 
-***Dataset:***
-The project uses the Cardiovascular Disease Dataset (cardio_train.csv) obtained from Kaggle. The dataset contains demographic, behavioural, and clinical characteristics commonly associated with cardiovascular disease risk, including:
-- Age
-- Sex
-- Height and weight
-- Blood pressure
-- Cholesterol level
-- Glucose level
-- Smoking status
-- Alcohol intake
-- Physical activity
-- Cardiovascular disease diagnosis (target variable)
+Dataset
+The project uses the Cardiovascular Disease Dataset (cardio_train.csv) obtained from Kaggle.
+The dataset contains demographic, behavioural, and clinical variables associated with cardiovascular disease risk, including:
+* Age
+* Sex
+* Height and Weight
+* Blood Pressure
+* Cholesterol Level
+* Glucose Level
+* Smoking Status
+* Alcohol Consumption
+* Physical Activity
+* Cardiovascular Disease Diagnosis (Target Variable)
 
-***Three machine learning algorithms are developed and compared:*** 
-- Logistic Regression
-- Random Forest
-- Gradient Boosting
+Machine Learning Models
+Three supervised machine learning algorithms were developed and compared:
+* Logistic Regression
+* Random Forest
+* Gradient Boosting
+Model Evaluation Metrics
+Models were evaluated using:
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* ROC-AUC
+* Confusion Matrix
+The Gradient Boosting model achieved the best overall performance and was selected for explainability analysis and dashboard deployment.
 
-***Model performance is assessed using standard classification metrics, including:***
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- ROC-AUC
-- Confusion matrices
+Explainable AI (XAI)
+To improve transparency and trustworthiness, SHAP (SHapley Additive exPlanations) was applied to interpret model behaviour at both global and individual levels.
+Global Explanations
+* Model Feature Importance
+* SHAP Global Feature Importance
+* SHAP Summary Plot
+* SHAP Beeswarm Plot
+Local Explanations
+* Patient-Level Waterfall Plot
+* Individual Risk Factor Analysis
+* Prediction Interpretation
+These visualisations help users understand how different features contribute to cardiovascular risk predictions.
 
-To improve transparency and trustworthiness, ***SHAP (SHapley Additive exPlanations)*** is used to explain model behaviour at both global and individual levels for the best performing model slected (Gradient Boosting in this case). The XAI component includes:
-- Model-based feature importance analysis
-- Global feature importance analysis
-- SHAP summary plots
-- SHAP beeswarm visualisations
-- Individual patient waterfall explanations
-- Patient-level risk interpretation
+Interactive Dashboard
+The final output is an interactive dashboard built using Dash and Plotly (app.py).
+The dashboard allows users to:
+* Explore cardiovascular risk predictions
+* Investigate model explanations
+* Compare feature importance
+* Examine patient-specific risk profiles
+Intended Audiences
+* Patients
+* Clinicians
+* Healthcare Researchers
+* Data Scientists and Machine Learning Practitioners
 
-The final output is an ***interactive dashboard built with Dash and Plotly (app.py)***, allowing to explore cardiovascular risk predictions and corresponding explanations. The dashboard is designed to support different audiences interested in understanding the factors that influence cardiovascular risk, such as 
-- Patients
-- Clinicians
-- ML researchers 
+Technologies Used
+* Python 3.10.9
+* Pandas
+* NumPy
+* Scikit-learn
+* SHAP
+* Plotly
+* Dash
+* Matplotlib
+* Joblib
 
-***Python version used:*** 3.10.9
+Running the Dashboard
+1. Navigate to the project directory
+cd cardio-xai-dashboard
+2. Install required packages
+pip install pandas numpy scikit-learn shap dash plotly matplotlib joblib
+3. Run the dashboard
+python app.py
+4. Open the dashboard
+Open your browser and navigate to:
+http://127.0.0.1:8050
 
-#### Run the dashboard using app.py (or app.ipynb if needed)
-- To run the app, go to Terminal and find the folder containing app.py and the model file
-- Then open the lcoal URL shown in the Termial (for example: http://127.0.0.1:8050)
+Troubleshooting
+If joblib, dash, or other packages work in Jupyter Notebook but not in app.py, verify which Python interpreter is being used:
+import sys
+print(sys.executable)
+Example output:
+/usr/local/bin/python3.10
+Install packages into that specific Python environment:
+/usr/local/bin/python3.10 -m pip install joblib dash plotly pandas scikit-learn shap
+Test the imports:
+/usr/local/bin/python3.10 -c "import joblib, dash, plotly, pandas, sklearn, shap; print('All imports working')"
+Then run:
+/usr/local/bin/python3.10 app.py
 
-- In case joblib and dash work in app.ipynb but not in app.py, run the following first:
-    - import sys
-    - print(sys.executable)
-    to print the output, for example: /usr/local/bin/python3.10
-- Then use the exact same path to run app.py in the Terminal
-    - for example in Mac: cd ~/Desktop/cardio-xai-dashboard/notebooks/usr/local/bin/python3.10 app.py
-- Install packages into that exact Python in the Terminal
-    - for example in Mac: /usr/local/bin/python3.10 -m pip install joblib dash plotly pandas scikit-learn
-- Test imports
-    - for example in Mac: /usr/local/bin/python3.10 -c "import joblib, dash, plotly, pandas, sklearn; print('All imports working')
-- Then run the app in the Terminal
-    - for example in Mac: cd ~/Desktop/cardio-xai-dashboard/notebooks/usr/local/bin/python3.10 app.py
-- Finally, open the url
-    - for example: http://127.0.0.1:8050/
+Key Skills Demonstrated
+* Machine Learning Classification
+* Healthcare Analytics
+* Explainable AI (XAI)
+* SHAP Interpretation
+* Feature Engineering
+* Model Evaluation
+* Interactive Dashboard Development
+* Data Visualisation
+* Python Development
