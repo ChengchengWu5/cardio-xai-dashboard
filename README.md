@@ -120,9 +120,9 @@ The dashboard enables users to:
 cardio-xai-dashboard/
 │
 ├── dashboard_sreenshots/
-│   └── patient_friendly_explanation
-│   └── clinician_explanation
-│   └── machine_learning_researcher_view
+│   ├── patient_friendly_explanation
+│   ├── clinician_explanation
+│   ├── machine_learning_researcher_view
 │   └── ethinics_and_safety
 ├── data/
 │   └── cardio_train.csv
@@ -132,8 +132,8 @@ cardio-xai-dashboard/
 │   ├── shap_beeswarm_plot.png
 │   └── patient_waterfall_plot.png
 ├── notebooks/
-│   └── app.ipynb
-│   └── app.py
+│   ├── app.ipynb
+│   ├── app.py
 │   └── cardio-xai_selected.ipynb
 ├── selected_model/
 │   └── gradient_boosting_cardio_model.pkl
