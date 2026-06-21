@@ -67,7 +67,6 @@ To improve transparency and trustworthiness, **SHAP (SHapley Additive exPlanatio
 
 * Model-Based Feature Importance
 * SHAP Global Feature Importance
-* SHAP Summary Plot
 * SHAP Beeswarm Plot
 
 ### Local Explanations
