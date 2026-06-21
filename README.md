@@ -1,20 +1,20 @@
-# Cardiovascular Risk Prediction and Explainable AI (XAI) Dashboard
+# Cardiovascular Disease Risk Prediction and Explainable AI (XAI) Dashboard
 
 ## Overview
 
-This project demonstrates the development of an Explainable Artificial Intelligence (XAI) framework for cardiovascular disease (CVD) risk prediction using the Cardiovascular Disease Dataset from Kaggle.
+This project demonstrates the development of an Explainable AI framework for cardiovascular disease risk prediction using a publicly available health dataset from Kaggle.
 
-The project covers the complete machine learning workflow, including data preparation, feature engineering, model development, performance evaluation, model interpretation, and dashboard deployment. The aim is not only to predict cardiovascular risk but also to provide transparent explanations that help users understand the factors driving each prediction.
+It covers a machine learning workflow, including data cleaning and preparation, feature engineering, model development, performance evaluation, model interpretation, and dashboard building. The aim is not only to predict cardiovascular disease risk but also to provide transparent explanations that help users understand the factors driving each prediction.
 
 ---
 
 ## Project Objectives
 
-* Develop machine learning models for cardiovascular disease risk prediction.
-* Compare model performance using multiple evaluation metrics.
-* Apply Explainable AI (XAI) techniques to improve model transparency.
-* Generate both global and patient-level explanations of model predictions.
-* Build an interactive dashboard for communicating predictions and explanations to different audiences.
+* Develop machine learning models for cardiovascular disease risk prediction
+* Compare model performance using multiple evaluation metrics
+* Apply Explainable AI (XAI) techniques to improve model transparency
+* Generate both global and patient-level explanations of model predictions
+* Build an interactive dashboard for communicating predictions and explanations to different audiences
 
 ---
 
@@ -54,13 +54,12 @@ Models were evaluated using:
 * Recall
 * F1-Score
 * ROC-AUC
-* Confusion Matrix
 
-The **Gradient Boosting model** achieved the best overall performance and was selected for explainability analysis and dashboard deployment.
+The **Gradient Boosting model** achieved the best overall performance and was selected for explainability analysis and dashboard building.
 
 ---
 
-## Explainable AI (XAI)
+## Explainable AI
 
 To improve transparency and trustworthiness, **SHAP (SHapley Additive exPlanations)** was applied to interpret model behaviour at both global and individual levels.
 
@@ -76,17 +75,17 @@ To improve transparency and trustworthiness, **SHAP (SHapley Additive exPlanatio
 * Individual Patient Waterfall Plot
 * Patient-Level Risk Interpretation
 
-These visualisations help users understand how different features contribute to cardiovascular risk predictions.
+These visualisations help users understand how different features contribute to cardiovascular disease risk predictions.
 
 ---
 
 ## Interactive Dashboard
 
-The final output is an interactive dashboard built using **Dash** and **Plotly** (`app.py`).
+The final output is an interactive dashboard built with **Dash** and **Plotly** (`app.py`).
 
 The dashboard enables users to:
 
-* Explore cardiovascular risk predictions
+* Explore cardiovascular disease risk predictions
 * Investigate model explanations
 * Compare feature importance
 * Examine patient-specific risk profiles
@@ -95,8 +94,7 @@ The dashboard enables users to:
 
 * Patients
 * Clinicians
-* Healthcare Researchers
-* Data Scientists and Machine Learning Practitioners
+* Machine Learning researchers
 
 ---
 
@@ -134,7 +132,7 @@ cardio-xai-dashboard/
 ├── notebooks/
 │   ├── app.ipynb
 │   ├── app.py
-│   └── cardio-xai_dashboard.ipynb
+│   └── cardio-xai.ipynb
 ├── selected_model/
 │   └── gradient_boosting_cardio_model.pkl
 └── README.md
@@ -229,4 +227,4 @@ OR run app.ipynb instead
 * Add patient-friendly explanation views
 * Incorporate model fairness and bias assessment
 * Support real-time risk prediction using user inputs
-* Conduct usability testing with patients, clinicians, and researchers
+* Conduct usability testing with patients, clinicians, and Machine Learning researchers
