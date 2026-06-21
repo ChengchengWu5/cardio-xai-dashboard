@@ -224,7 +224,6 @@ OR run app.ipynb instead
 ## Future Enhancements
 
 * Compare additional machine learning models (e.g., XGBoost, LightGBM)
-* Add patient-friendly explanation views
+* Add more audience adaptive interactive visualizations
 * Incorporate model fairness and bias assessment
-* Support real-time risk prediction using user inputs
 * Conduct usability testing with patients, clinicians, and Machine Learning researchers
