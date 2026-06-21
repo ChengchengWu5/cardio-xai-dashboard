@@ -1,4 +1,4 @@
-# Cardiovascular Disease Risk Prediction and Explainable AI (XAI)
+# Cardiovascular Disease Risk Prediction and Explainable AI (XAI) Project
 
 ## Overview
 
