@@ -1,8 +1,8 @@
-# Cardiovascular Disease Risk Prediction and Explainable AI (XAI) Project
+# Audience-centered Explainable AI (XAI) Dashboard for Cardiovascular Disease Risk Prediction
 
 ## Overview
 
-This project demonstrates the development of an Explainable AI framework for cardiovascular disease risk prediction using a publicly available health dataset from Kaggle.
+This project demonstrates the development of an Explainable AI workflow for cardiovascular disease risk prediction using a publicly available health dataset from Kaggle.
 
 It covers a machine learning workflow, including data cleaning and preparation, feature engineering, model development, performance evaluation, model interpretation, and dashboard building. The aim is not only to predict cardiovascular disease risk but also to provide transparent explanations that help users understand the factors driving each prediction.
 
